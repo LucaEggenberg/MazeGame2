@@ -8,22 +8,7 @@ namespace MazeGame.Game
 
         public void Run()
         {
-            while (!Player.IsOnGoal())
-            {
-                if (Player.IsRightWall() && !Player.IsFrontWall())
-                {
-                    Player.Step();
-                }
-                else if (Player.IsRightWall() && Player.IsFrontWall())
-                {
-                    Player.TurnLeft();
-                }
-                else if (!Player.IsRightWall())
-                {
-                    Player.TurnRight();
-                    Player.Step();
-                }
-            }
+
         }
     }
 }
