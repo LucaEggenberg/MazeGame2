@@ -39,7 +39,7 @@ namespace MazeGame
             ChangeLevel();
             UpdatePlayerPosition(_player);
         }
-
+        
         public void OnChangeLevelClicked(object? sender, RoutedEventArgs? e)
         {
             if (sender is not Button button || !int.TryParse(button.Name.Replace("level", string.Empty), out var i))
